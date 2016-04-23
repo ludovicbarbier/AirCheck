@@ -5,10 +5,11 @@ import java.util.Date;
 public class SicknessDetail {
 	
 	String symptom;
-	String source;
 	Date date;
 	int severity;
 	Coordinates coordinates;
+	InfoSource source;
+	String location;
 
 	public String getSymptom() {
 		return symptom;
@@ -37,15 +38,6 @@ public class SicknessDetail {
 	}
 
 
-	public String getSource() {
-		return source;
-	}
-	
-	public void setSource(String source) {
-		this.source = source;
-	}
-
-
 	public Coordinates getCoordinates() {
 		return coordinates;
 	}
@@ -54,5 +46,27 @@ public class SicknessDetail {
 	public void setCoordinates(Coordinates coordinates) {
 		this.coordinates = coordinates;
 	}
+
+
+	public InfoSource getSource() {
+		return source;
+	}
+
+
+	public void setSource(InfoSource source) {
+		this.source = source;
+	}
+
+
+	public String getLocation() {
+		return location;
+	}
+
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+	
+	
 	
 }

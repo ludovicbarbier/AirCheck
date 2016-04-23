@@ -1,29 +1,28 @@
 package com.aircheck.model;
 
 public class Coordinates {
-	Double latitude;
-	Double longitude;
-	String description;
+	Double lat;
+	Double lon;
+	Double elev;
 	
-	public Double getLatitude() {
-		return latitude;
+	public Double getLat() {
+		return lat;
 	}
-	public void setLatitude(Double latitude) {
-		this.latitude = latitude;
+	public void setLat(Double lat) {
+		this.lat = lat;
 	}
-	public Double getLongitude() {
-		return longitude;
+	public Double getLon() {
+		return lon;
 	}
-	public void setLongitude(Double longitude) {
-		this.longitude = longitude;
+	public void setLon(Double lon) {
+		this.lon = lon;
 	}
-	public String getDescription() {
-		return description;
+	public Double getElev() {
+		return elev;
 	}
-	public void setDescription(String description) {
-		this.description = description;
+	public void setElev(Double elev) {
+		this.elev = elev;
 	}
-
 	
 	
 }

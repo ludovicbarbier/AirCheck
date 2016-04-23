@@ -18,6 +18,7 @@ import org.springframework.web.client.RestTemplate;
 import com.aircheck.google.geocode.GoogleGeocodeResult;
 import com.aircheck.google.geocode.Result;
 import com.aircheck.model.Coordinates;
+import com.aircheck.model.InfoSource;
 import com.aircheck.model.SicknessDetail;
 import com.aircheck.twitter.result.Status;
 import com.aircheck.twitter.result.TwitterSearchResult;
@@ -27,7 +28,7 @@ public class TwitterSymptomSearcher {
 	public static List<SicknessDetail> searchSicknessDetails()
 	{
 		MultiValueMap<String, String> parameters = new LinkedMultiValueMap<String, String>();
-		parameters.set("q","cough");
+		parameters.set("q","flu+OR+chills+OR+sore+throat+OR+headache+OR+runny+nose+OR+vomiting+OR+sneazing+OR+fever+OR+diarrhea+OR+dry+cough");
 		parameters.set("lang","en");
 		parameters.set("include_entities","false");
 		URI url =  URIBuilder.fromUri("https://api.twitter.com/1.1/search/tweets.json").queryParams(parameters).build();
@@ -41,9 +42,10 @@ public class TwitterSymptomSearcher {
 			if (tweet.getUser().getLocation() != null)
 			{
 				detail.setCoordinates(getCoordinates(tweet.getUser().getLocation()));
+				detail.setLocation(tweet.getUser().getLocation());
 			}
 			detail.setSymptom("cough");
-			detail.setSource("Twitter");
+			detail.setSource(InfoSource.Twitter);
 			detail.setSeverity(5);
 		    try {
 				detail.setDate(df.parse(tweet.getCreatedAt()));
@@ -51,6 +53,7 @@ public class TwitterSymptomSearcher {
 				e.printStackTrace();
 			} 
 			details.add(detail);
+			System.err.println(tweet.getText());
 		}
 		return details;
 	}
@@ -69,9 +72,8 @@ public class TwitterSymptomSearcher {
 			Result result = results.getResults().get(0);
 			if (result.getGeometry() != null && result.getGeometry().getLocation() != null)
 			{
-				coordinates.setLatitude(result.getGeometry().getLocation().getLat());
-				coordinates.setLatitude(result.getGeometry().getLocation().getLng());
-				coordinates.setDescription(location);
+				coordinates.setLat(result.getGeometry().getLocation().getLat());
+				coordinates.setLon(result.getGeometry().getLocation().getLng());
 			}
 		}
 		return coordinates;
