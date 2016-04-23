@@ -8,6 +8,8 @@ public class SicknessDetail {
 	Date date;
 	int severity;
 	Coordinates coordinates;
+	InfoSource source;
+	String location;
 
 	public String getSymptom() {
 		return symptom;
@@ -36,8 +38,6 @@ public class SicknessDetail {
 	}
 
 
-
-
 	public Coordinates getCoordinates() {
 		return coordinates;
 	}
@@ -46,5 +46,27 @@ public class SicknessDetail {
 	public void setCoordinates(Coordinates coordinates) {
 		this.coordinates = coordinates;
 	}
+
+
+	public InfoSource getSource() {
+		return source;
+	}
+
+
+	public void setSource(InfoSource source) {
+		this.source = source;
+	}
+
+
+	public String getLocation() {
+		return location;
+	}
+
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+	
+	
 	
 }
