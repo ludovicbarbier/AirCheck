@@ -21,9 +21,9 @@
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
 	your browser</a> to improve your experience.</p>
 <![endif]-->
-
+<h1>AirCheck</h1>
 <section id="controls">
-
+<button id="add_data">Add data</button>
 </section>
 <section id="map" class="map" style="width: 100%; height: 100%;"></section>
 
@@ -244,7 +244,7 @@
 	 WMTS source
 	 */
 	var mapSource = new ol.source.WMTS({
-		url: "//map1{a-c}.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi?TIME=2013-06-16",
+		url: "//map1{a-c}.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi?TIME=2016-04-12",
 		layer: "MODIS_Terra_CorrectedReflectance_TrueColor",
 		format: "image/jpeg",
 		matrixSet: "EPSG4326_250m",
@@ -298,9 +298,6 @@
 	}
 
 	function showPosition(position) {
-		myLat = position.coords.latitude;
-		myLng = position.coords.longitude;
-		console.log(myLat + " " + myLng);
 		var map = new ol.Map({
 			layers: [mapLayer, clusters],
 			target: 'map',

@@ -1,0 +1,82 @@
+[
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                37.8271784,
+                -122.2913078
+            ]
+        },
+        "properties": {
+            "symptom": "sore throat, cough, itchy eyes",
+            "source": "Twitter",
+            "severity": 5,
+            "date": 1461201383000
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.0,
+                0.0
+            ]
+        },
+        "properties": {
+            "symptom": "sore throat, headache, runny nose",
+            "source": "Twitter",
+            "severity": 5,
+            "date": 1461078095000
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                1.6076812,
+                110.3785438
+            ]
+        },
+        "properties": {
+            "symptom": "",
+            "source": "Twitter",
+            "severity": 5,
+            "date": 1460945641000
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                2.9181251,
+                101.4763288
+            ]
+        },
+        "properties": {
+            "symptom": "sore throat",
+            "source": "Twitter",
+            "severity": 5,
+            "date": 1460893821000
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -26.2041028,
+                28.0473051
+            ]
+        },
+        "properties": {
+            "symptom": "sore throat, headache, runny nose",
+            "source": "Twitter",
+            "severity": 5,
+            "date": 1460736848000
+        }
+    }
+]
