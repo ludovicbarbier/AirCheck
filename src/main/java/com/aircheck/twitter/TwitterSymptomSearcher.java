@@ -18,6 +18,7 @@ import org.springframework.web.client.RestTemplate;
 import com.aircheck.google.geocode.GoogleGeocodeResult;
 import com.aircheck.google.geocode.Result;
 import com.aircheck.model.Coordinates;
+import com.aircheck.model.Geometry;
 import com.aircheck.model.InfoSource;
 import com.aircheck.model.SicknessDetail;
 import com.aircheck.twitter.result.Status;
@@ -33,34 +34,33 @@ public class TwitterSymptomSearcher {
 		parameters.set("include_entities","false");
 		URI url =  URIBuilder.fromUri("https://api.twitter.com/1.1/search/tweets.json").queryParams(parameters).build();
 		List<SicknessDetail> details = new ArrayList<>();
-		SicknessDetail detail;
+		
 		TwitterSearchResult results = TwitterConnector.connect().restOperations().getForObject(url, TwitterSearchResult.class);
 		DateFormat df = new SimpleDateFormat("EEE MMM dd kk:mm:ss z yyyy", Locale.ENGLISH);
-		for (Status tweet : results.getStatuses())
-		{
-			detail = new SicknessDetail();
-			if (tweet.getUser().getLocation() != null)
-			{
-				detail.setCoordinates(getCoordinates(tweet.getUser().getLocation()));
-				detail.setLocation(tweet.getUser().getLocation());
+		for (Status tweet : results.getStatuses()) {
+			SicknessDetail detail = new SicknessDetail();
+			if (tweet.getUser().getLocation() != null) {
+				
+				detail.setGeometry(getCoordinates(tweet.getUser().getLocation()));
+//				detail.setLocation(tweet.getUser().getLocation());
 			}
-			detail.setSymptom("cough");
-			detail.setSource(InfoSource.Twitter);
-			detail.setSeverity(5);
-		    try {
-				detail.setDate(df.parse(tweet.getCreatedAt()));
-			} catch (ParseException e) {
-				e.printStackTrace();
-			} 
+//			detail.setSymptom("cough");
+//			detail.setSource(InfoSource.Twitter);
+//			detail.setSeverity(5);
+//		    try {
+//				detail.setDate(df.parse(tweet.getCreatedAt()));
+//			} catch (ParseException e) {
+//				e.printStackTrace();
+//			} 
 			details.add(detail);
 			System.err.println(tweet.getText());
 		}
 		return details;
 	}
 	
-	private static Coordinates getCoordinates(String location)
+	private static Geometry getCoordinates(String location)
 	{
-		Coordinates coordinates = new Coordinates();
+		Geometry coordinates = new Geometry();
 		RestTemplate restTemplate = new RestTemplate();
 		Map<String, String> vars = new HashMap<String, String>();
 		 
@@ -72,8 +72,9 @@ public class TwitterSymptomSearcher {
 			Result result = results.getResults().get(0);
 			if (result.getGeometry() != null && result.getGeometry().getLocation() != null)
 			{
-				coordinates.setLat(result.getGeometry().getLocation().getLat());
-				coordinates.setLon(result.getGeometry().getLocation().getLng());
+				double lat = result.getGeometry().getLocation().getLat();
+				double lon = result.getGeometry().getLocation().getLng();
+				coordinates.setCoordinates(new double[] {lat, lon});
 			}
 		}
 		return coordinates;

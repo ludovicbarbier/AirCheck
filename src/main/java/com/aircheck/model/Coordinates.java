@@ -3,7 +3,7 @@ package com.aircheck.model;
 public class Coordinates {
 	Double lat;
 	Double lon;
-	Double elev;
+
 	
 	public Double getLat() {
 		return lat;
@@ -16,12 +16,6 @@ public class Coordinates {
 	}
 	public void setLon(Double lon) {
 		this.lon = lon;
-	}
-	public Double getElev() {
-		return elev;
-	}
-	public void setElev(Double elev) {
-		this.elev = elev;
 	}
 	
 	
