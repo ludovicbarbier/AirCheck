@@ -5,6 +5,7 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
@@ -25,13 +26,16 @@ import com.aircheck.twitter.result.Status;
 import com.aircheck.twitter.result.TwitterSearchResult;
 
 public class TwitterSymptomSearcher {
+	
+	private static List<String> symptoms = Arrays.asList("sore throat", "headache", "runny nose", "irritation", "sneezing", "chest pain", "asthma", "cough", "burning eyes", "wheez", "itchy eyes");
 
 	public static List<SicknessDetail> searchSicknessDetails()
 	{
 		MultiValueMap<String, String> parameters = new LinkedMultiValueMap<String, String>();
-		parameters.set("q","flu+OR+chills+OR+sore+throat+OR+headache+OR+runny+nose+OR+vomiting+OR+sneazing+OR+fever+OR+diarrhea+OR+dry+cough");
+		parameters.set("q",prepareQuery());
 		parameters.set("lang","en");
 		parameters.set("include_entities","false");
+		parameters.set("count","100");
 		URI url =  URIBuilder.fromUri("https://api.twitter.com/1.1/search/tweets.json").queryParams(parameters).build();
 		List<SicknessDetail> details = new ArrayList<>();
 		
@@ -53,6 +57,17 @@ public class TwitterSymptomSearcher {
 //				e.printStackTrace();
 //			} 
 			details.add(detail);
+			StringBuilder stringBuilder = new StringBuilder();
+			boolean first = true;
+			for (String s : symptoms) {
+				if (tweet.getText().contains(s)) {
+					if (!first)
+						stringBuilder.append(", ");
+					stringBuilder.append(s);
+					first = false;
+				}					
+			}
+			detail.setSymptom(stringBuilder.toString());
 			System.err.println(tweet.getText());
 		}
 		return details;
@@ -78,5 +93,18 @@ public class TwitterSymptomSearcher {
 			}
 		}
 		return coordinates;
+	}
+	
+	private static String prepareQuery() {
+		StringBuilder stringBuilder = new StringBuilder();
+		boolean first = true;
+		for (String s : symptoms) {
+			if (!first)
+				stringBuilder.append("+OR+");
+			stringBuilder.append(s);
+			first = false;
+		}
+		
+		return stringBuilder.toString().replace(" ", "+");
 	}
 }
