@@ -71,8 +71,7 @@ public class TwitterSymptomSearcher {
 		return details;
 	}
 	
-	private static Geometry getCoordinates(String location)
-	{
+	private static Geometry getCoordinates(String location) {
 		Geometry coordinates = new Geometry();
 		RestTemplate restTemplate = new RestTemplate();
 		Map<String, String> vars = new HashMap<String, String>();
@@ -80,11 +79,9 @@ public class TwitterSymptomSearcher {
 		vars.put("address", location);
 		vars.put("sensor", "false");
 		GoogleGeocodeResult results = restTemplate.getForObject("http://maps.googleapis.com/maps/api/geocode/json?address={address}&sensor={sensor}",GoogleGeocodeResult.class, vars);
-		if (results.getResults() != null && results.getResults().size() > 0)
-		{
+		if (results.getResults() != null && results.getResults().size() > 0) {
 			Result result = results.getResults().get(0);
-			if (result.getGeometry() != null && result.getGeometry().getLocation() != null)
-			{
+			if (result.getGeometry() != null && result.getGeometry().getLocation() != null) {
 				double lat = result.getGeometry().getLocation().getLat();
 				double lon = result.getGeometry().getLocation().getLng();
 				coordinates.setCoordinates(new double[] {lat, lon});
