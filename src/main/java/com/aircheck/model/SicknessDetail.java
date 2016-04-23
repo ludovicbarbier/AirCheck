@@ -5,6 +5,7 @@ import java.util.Date;
 public class SicknessDetail {
 	
 	String symptom;
+	String source;
 	Date date;
 	int severity;
 	Coordinates coordinates;
@@ -36,6 +37,13 @@ public class SicknessDetail {
 	}
 
 
+	public String getSource() {
+		return source;
+	}
+	
+	public void setSource(String source) {
+		this.source = source;
+	}
 
 
 	public Coordinates getCoordinates() {
