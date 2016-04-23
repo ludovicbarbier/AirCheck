@@ -8,5 +8,6 @@ public class AircheckApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(AircheckApplication.class, args);
+		System.err.println("It's working");
 	}
 }
