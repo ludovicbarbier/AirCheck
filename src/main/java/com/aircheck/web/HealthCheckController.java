@@ -20,8 +20,8 @@ public class HealthCheckController {
 	@RequestMapping("/getHealthInfo")
 	public List<SicknessDetail> getHealthInfo() {
 		List<SicknessDetail> details = new ArrayList<>();
-		
-		return null;
+		details.add(createSicknessDetail());
+		return details;
 	}
 	
 	
