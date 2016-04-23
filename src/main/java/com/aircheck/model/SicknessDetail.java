@@ -8,6 +8,10 @@ public class SicknessDetail {
 	final String type = "Feature";
 	
 	private Geometry geometry;
+	private String symptom;
+	private InfoSource source;
+	private int severity;
+	Date date;
 	
 	private Properties properties;
 
@@ -30,12 +34,45 @@ public class SicknessDetail {
 	public String getType() {
 		return type;
 	}
+
+	public String getSymptom() {
+		return symptom;
+	}
+
+	public void setSymptom(String symptom) {
+		this.symptom = symptom;
+	}
+
+	public InfoSource getSource() {
+		return source;
+	}
+
+	public void setSource(InfoSource source) {
+		this.source = source;
+	}
+
+	public int getSeverity() {
+		return severity;
+	}
+
+	public void setSeverity(int severity) {
+		this.severity = severity;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
 	
 	
 	
-//	String symptom;
-//	Date date;
-//	int severity;
+	
+	
+//	
+//	
 //	Coordinates coordinates;
 //	InfoSource source;
 //	String location;

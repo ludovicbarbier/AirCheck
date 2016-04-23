@@ -18,7 +18,6 @@ import org.springframework.web.client.RestTemplate;
 
 import com.aircheck.google.geocode.GoogleGeocodeResult;
 import com.aircheck.google.geocode.Result;
-import com.aircheck.model.Coordinates;
 import com.aircheck.model.Geometry;
 import com.aircheck.model.InfoSource;
 import com.aircheck.model.SicknessDetail;
@@ -48,14 +47,13 @@ public class TwitterSymptomSearcher {
 				detail.setGeometry(getCoordinates(tweet.getUser().getLocation()));
 //				detail.setLocation(tweet.getUser().getLocation());
 			}
-//			detail.setSymptom("cough");
-//			detail.setSource(InfoSource.Twitter);
-//			detail.setSeverity(5);
-//		    try {
-//				detail.setDate(df.parse(tweet.getCreatedAt()));
-//			} catch (ParseException e) {
-//				e.printStackTrace();
-//			} 
+			detail.setSource(InfoSource.Twitter);
+			detail.setSeverity(5);
+		    try {
+				detail.setDate(df.parse(tweet.getCreatedAt()));
+			} catch (ParseException e) {
+				e.printStackTrace();
+			} 
 			details.add(detail);
 			StringBuilder stringBuilder = new StringBuilder();
 			boolean first = true;
