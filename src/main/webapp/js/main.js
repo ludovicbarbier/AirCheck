@@ -37,7 +37,7 @@ window.onload = function () {
 
         Array.prototype.push.apply(symptomsSelected, symptoms);
         symptoms.forEach(function(symptom) {
-            $('#sympton-list').append('<div class="col-md-6 col-sm-6 col-lg-4"><label class="list-group-item"><input type="checkbox" checked name="' + symptom + '" value="' + symptom + '">' + symptom + '</label></div>');
+            $('#sympton-list').append('<div class="col-md-6 col-sm-6 col-lg-4"><label class="list-group-item"><input type="checkbox" checked name="' + symptom + '" value="' + symptom + '"> ' + symptom + '</label></div>');
         })
 
         $('#sympton-list').find('input').change(function(event){
@@ -84,6 +84,9 @@ window.onload = function () {
 
             var aqi = L.tileLayer('http://tiles.aqicn.org/tiles/usepa-pm25/{z}/{x}/{y}.png?token=84265a59e803ec10370a06e96898bebef471d30b').addTo(map);
             map.addLayer(aqi);
+
+            //var fire = L.tileLayer('https://firms.modaps.eosdis.nasa.gov/wms/viirs/?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=fires24&width=1024&height=512&BBOX=-180,-90,180,90&&SRS=EPSG:4326').addTo(map);
+            //map.addLayer(fire);
 
             return markers;
         }
