@@ -5,12 +5,14 @@ import java.util.Properties;
 
 public class SicknessDetail {
 	
+	public final static String PROPERTY_SEVERITY = "SEVERITY";
+	public final static String PROPERTY_SYMPTOMS = "SYMPTOMS";
+	public final static String PROPERTY_SOURCE = "SOURCE";
+	public final static String PROPERTY_DATE = "DATE";
+	
 	final String type = "Feature";
 	
 	private Geometry geometry;
-	private String symptom;
-	private InfoSource source;
-	private int severity;
 	Date date;
 	
 	private Properties properties;
@@ -34,104 +36,4 @@ public class SicknessDetail {
 	public String getType() {
 		return type;
 	}
-
-	public String getSymptom() {
-		return symptom;
-	}
-
-	public void setSymptom(String symptom) {
-		this.symptom = symptom;
-	}
-
-	public InfoSource getSource() {
-		return source;
-	}
-
-	public void setSource(InfoSource source) {
-		this.source = source;
-	}
-
-	public int getSeverity() {
-		return severity;
-	}
-
-	public void setSeverity(int severity) {
-		this.severity = severity;
-	}
-
-	public Date getDate() {
-		return date;
-	}
-
-	public void setDate(Date date) {
-		this.date = date;
-	}
-	
-	
-	
-	
-	
-//	
-//	
-//	Coordinates coordinates;
-//	InfoSource source;
-//	String location;
-//
-//	public String getSymptom() {
-//		return symptom;
-//	}
-//
-//
-//	public void setSymptom(String symptom) {
-//		this.symptom = symptom;
-//	}
-//
-//
-//	public Date getDate() {
-//		return date;
-//	}
-//
-//	public void setDate(Date date) {
-//		this.date = date;
-//	}
-//
-//	public int getSeverity() {
-//		return severity;
-//	}
-//
-//	public void setSeverity(int severity) {
-//		this.severity = severity;
-//	}
-//
-//
-//	public Coordinates getCoordinates() {
-//		return coordinates;
-//	}
-//
-//
-//	public void setCoordinates(Coordinates coordinates) {
-//		this.coordinates = coordinates;
-//	}
-//
-//
-//	public InfoSource getSource() {
-//		return source;
-//	}
-//
-//
-//	public void setSource(InfoSource source) {
-//		this.source = source;
-//	}
-//
-//
-//	public String getLocation() {
-//		return location;
-//	}
-//
-//
-//	public void setLocation(String location) {
-//		this.location = location;
-//	}
-
-	
 }

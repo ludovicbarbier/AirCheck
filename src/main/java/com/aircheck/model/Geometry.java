@@ -1,7 +1,5 @@
 package com.aircheck.model;
 
-import java.util.List;
-
 public class Geometry {
 	
 	//{	  "type": "Feature", 
