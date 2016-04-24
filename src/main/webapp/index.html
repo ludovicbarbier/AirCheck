@@ -12,21 +12,27 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/ol.css" type="text/css">
-<style>
-    .navbar {
-        background: #fff;
-    }
-    .navbar-brand img {
-        height: 54px;
-        margin-top: -18px;
-    }
-    .navbar-text {
-        margin-left: -10px;
-    }
+    <style>
+        .navbar {
+            background: #fff;
+        }
+
+        .navbar-brand img {
+            height: 54px;
+            margin-top: -18px;
+        }
+
+        .navbar-text {
+            margin-left: -10px;
+        }
+
+        .modal-body {
+            overflow: auto;
+        }
     </style>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-<body style="padding-top: 70px; background: #000;">
+<body style="padding-top: 70px; background: #000; height: 100%;">
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
@@ -34,7 +40,8 @@
 <nav class="navbar navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -44,22 +51,176 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <p class="navbar-text"><b>AirCheck</b></p>
-            <button type="button" class="btn btn-default navbar-btn">Add data</button>
-            <button type="button" class="btn btn-default navbar-btn">Map display</button>
-        </div><!--/.nav-collapse -->
+            <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#dataModal">Add
+                data
+            </button>
+            <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#dateModal">Date
+                range
+            </button>
+            <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#symptomModal">
+                Symptoms
+            </button>
+
+        </div>
+        <!--/.nav-collapse -->
     </div>
-</nav></nav>
-<section id="map-tools-panel">
-    <form id="map-tools-form">
-        <p>Select a date range:</p>
-        <input type="date" name="date1" id="date1"><br>
-        <input type="date" name="date2" id="date2"><br>
+</nav>
+<div class="modal fade" tabindex="-1" role="dialog" id="dataModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Add symptom data</h4>
+            </div>
+            <div class="modal-body">
+                <p>Your current location will be used</p>
 
-        <p>Symptoms:</p>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-lg-4">
+                        <label class="list-group-item"><input type="checkbox" name="symptom" value="sore throat"> sore
+                            throat</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-4">
+                        <label class="list-group-item"><input type="checkbox" name="symptom" value="headache"> headache</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-4">
+                        <label class="list-group-item"><input type="checkbox" name="symptom" value="runny nose"> runny
+                            nose</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-4">
+                        <label class="list-group-item"><input type="checkbox" name="symptom" value="irritation">
+                            irritation</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-4">
+                        <label class="list-group-item"><input type="checkbox" name="symptom" value="sneezing"> sneezing</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-4">
+                        <label class="list-group-item"><input type="checkbox" name="symptom" value="chest pain"> chest
+                            pain</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-4">
+                        <label class="list-group-item"><input type="checkbox" name="symptom" value="asthma">
+                            asthma</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-4">
+                        <label class="list-group-item"><input type="checkbox" name="symptom" value="cough">
+                            cough</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-4">
+                        <label class="list-group-item"><input type="checkbox" name="symptom" value="burning eyes">
+                            burning eyes</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-4">
+                        <label class="list-group-item"><input type="checkbox" name="symptom" value="wheez">
+                            wheeze</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-4">
+                        <label class="list-group-item"><input type="checkbox" name="symptom" value="itchy eyes"> itchy
+                            eyes</label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<div class="modal fade" tabindex="-1" role="dialog" id="dateModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Date</h4>
+            </div>
+            <div class="modal-body">
+                <p>Select a date range:</p>
+                <input type="date" name="date1" id="date1"> to
+                <input type="date" name="date2" id="date2">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Update map</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<div class="modal fade" tabindex="-1" role="dialog" id="symptomModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Symptoms</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-lg-4">
 
-    </form>
-
-</section>
+                        <label class="list-group-item"><input type="checkbox" name="symptom" value="sore throat"> sore
+                            throat</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-4">
+                        <label class="list-group-item"><input type="checkbox" name="symptom" value="headache">
+                            headache</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-4">
+                        <label class="list-group-item"><input type="checkbox" name="symptom" value="runny nose"> runny
+                            nose</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-4">
+                        <label class="list-group-item"><input type="checkbox" name="symptom" value="irritation">
+                            irritation</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-4">
+                        <label class="list-group-item"><input type="checkbox" name="symptom" value="sneezing">
+                            sneezing</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-4">
+                        <label class="list-group-item"><input type="checkbox" name="symptom" value="chest pain"> chest
+                            pain</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-4">
+                        <label class="list-group-item"><input type="checkbox" name="symptom" value="asthma">
+                            asthma</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-4">
+                        <label class="list-group-item"><input type="checkbox" name="symptom" value="cough">
+                            cough</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-4">
+                        <label class="list-group-item"><input type="checkbox" name="symptom" value="burning eyes">
+                            burning eyes</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-4">
+                        <label class="list-group-item"><input type="checkbox" name="symptom" value="wheez">
+                            wheeze</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-4">
+                        <label class="list-group-item"><input type="checkbox" name="symptom" value="itchy eyes"> itchy
+                            eyes</label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Update map</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
 <section id="map" class="map" style="width: 100%; height: 100%;"></section>
 
 
