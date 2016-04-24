@@ -153,12 +153,24 @@ window.onload = function () {
         transparent: true
     }).addTo(map);
 
+
+
     map.addLayer(layer);
 
     $.ajax({
         method: "GET",
         url: "sample/sample.json"
     }).done(function (data) {
-        L.geoJson(data).addTo(map);
+        // L.geoJson(data).addTo(map);
+
+        var markers = L.markerClusterGroup();
+        var geoJsonLayer = L.geoJson(data, {
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup(feature.properties.address);
+            }
+        });
+        markers.addLayer(geoJsonLayer);
+        map.addLayer(markers);
+
     });
 };
