@@ -10,12 +10,22 @@ $(function () {
     var clusterSource;
     var styleCache = {};
     var clusters;
+
+    var image = new ol.style.Circle({
+        radius: 5,
+        fill: null,
+        stroke: new ol.style.Stroke({color: 'red', width: 1})
+    });
+
     $.ajax({
         method: "GET",
         url: "sample/sample.json"
     }).done(function (data) {
         geoJSONSource = new ol.source.Vector({
-            features: (new ol.format.GeoJSON()).readFeatures(data)
+            features: (new ol.format.GeoJSON()).readFeatures(data),
+            style: new ol.style.Style({
+                image: image
+            })
         });
         clusterSource = new ol.source.Cluster({
             distance: 40,
