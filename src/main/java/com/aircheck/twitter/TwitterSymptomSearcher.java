@@ -29,7 +29,7 @@ import com.aircheck.twitter.result.TwitterSearchResult;
 public class TwitterSymptomSearcher {
 	
 	private static List<String> querySymptoms = Arrays.asList("sore throat", "headache", "runny nose", "irritation", "sneezing", "chest pain", "asthma", "cough", "burning eyes", "wheez", "itchy eyes");
-	private static List<String> queryWordsToIgnore = Arrays.asList("*cough");
+	private static List<String> queryWordsToIgnore = Arrays.asList("test");
 
 	
 	public static List<SicknessDetail> searchSicknessDetails()
