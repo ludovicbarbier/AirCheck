@@ -17,5 +17,7 @@ public class SicknessDetails {
 		this.features = features;
 	}
 	
-	
+	public String getType() {
+		return type;
+	}
 }
