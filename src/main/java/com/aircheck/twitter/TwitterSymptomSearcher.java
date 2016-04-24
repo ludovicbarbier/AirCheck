@@ -72,13 +72,16 @@ public class TwitterSymptomSearcher {
 			detail.getProperties().put(SicknessDetail.PROPERTY_SEVERITY, "5");
 			details.add(detail);
 			String tweetLower = tweet.getText().toLowerCase();
-			ArrayList<String> foundSymptoms = new ArrayList<String>();
+			StringBuilder stringBuilder = new StringBuilder();
+			boolean first = true;
 			for (String s : querySymptoms) {
 				if (tweetLower.contains(s)) {
-					foundSymptoms.add(s);
+					if (!first)
+						stringBuilder.append(", ");
+					stringBuilder.append(s);
 				}					
 			}
-			detail.getProperties().put(SicknessDetail.PROPERTY_SYMPTOMS, foundSymptoms.toString());
+			detail.getProperties().put(SicknessDetail.PROPERTY_SYMPTOMS, stringBuilder.toString());
 			System.err.println(tweet.getText());
 		}
 		return details;
@@ -98,7 +101,7 @@ public class TwitterSymptomSearcher {
 				coordinates = new Geometry();
 				double lat = result.getGeometry().getLocation().getLat();
 				double lon = result.getGeometry().getLocation().getLng();
-				coordinates.setCoordinates(new double[] {lat, lon});
+				coordinates.setCoordinates(new double[] {lon, lat});
 			}
 		}
 		return coordinates;

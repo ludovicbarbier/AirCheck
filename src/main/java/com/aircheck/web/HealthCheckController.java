@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.aircheck.model.Geometry;
 import com.aircheck.model.InfoSource;
 import com.aircheck.model.SicknessDetail;
+import com.aircheck.model.SicknessDetails;
 import com.aircheck.twitter.TwitterSymptomSearcher;
 
 @RestController
@@ -24,7 +25,7 @@ public class HealthCheckController {
 	private static List<SicknessDetail> localDetails = new ArrayList<SicknessDetail>();
 	
 	@RequestMapping("/getHealthInfo")
-	public List<SicknessDetail> getHealthInfo(@RequestParam(value="start", required=false) String start,
+	public SicknessDetails getHealthInfo(@RequestParam(value="start", required=false) String start,
 			@RequestParam(value="end", required=false) String end) {
 		DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
 		Date startDate = null;
@@ -46,7 +47,9 @@ public class HealthCheckController {
 			details.add(detail);
 		}
 		details.addAll(localDetails);
-		return details;
+		SicknessDetails sicknessDetails = new SicknessDetails();
+		sicknessDetails.setFeatures(details);
+		return sicknessDetails;
 	}
 
 	@RequestMapping("/addHealthInfo")
