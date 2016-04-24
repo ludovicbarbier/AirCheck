@@ -2,7 +2,7 @@ window.onload = function () {
 
     var map = L.map("map", {
         center: [0, 0],
-        zoom: 2,
+        zoom: 3 ,
         maxZoom: 8,
         crs: L.CRS.EPSG4326,
         maxBounds: [
