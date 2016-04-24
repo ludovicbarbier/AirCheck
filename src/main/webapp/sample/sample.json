@@ -5,16 +5,13 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          -33.8674869,
-          151.2069902
-        ]
+        "coordinates": [-74.0154317,40.7098744]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[cough]",
+        "SYMPTOMS": "asthma",
         "SOURCE": "Twitter",
-        "DATE": "1461450279000"
+        "DATE": "1461279697000"
       }
     },
     {
@@ -22,15 +19,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          40.8478088,
-          -122.6381817
+          -0.1277583,
+          51.5073509
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[headache]",
+        "SYMPTOMS": "asthma",
         "SOURCE": "Twitter",
-        "DATE": "1461449786000"
+        "DATE": "1461278994000"
       }
     },
     {
@@ -38,15 +35,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          56.130366,
-          -106.346771
+          -119.4179324,
+          36.778261
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[asthma]",
+        "SYMPTOMS": "chest pain",
         "SOURCE": "Twitter",
-        "DATE": "1461447311000"
+        "DATE": "1461276717000"
       }
     },
     {
@@ -54,15 +51,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.9705786,
-          30.1044288
+          -102.1732882,
+          31.9524799
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[cough]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461442651000"
+        "DATE": "1461275529000"
       }
     },
     {
@@ -70,15 +67,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.5928144,
-          -77.34239819999999
+          -106.346771,
+          56.130366
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[chest pain]",
+        "SYMPTOMS": "cough",
         "SOURCE": "Twitter",
-        "DATE": "1461432289000"
+        "DATE": "1461274578000"
       }
     },
     {
@@ -86,15 +83,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          53.4083714,
-          -2.9915726
+          -77.0469214,
+          38.8048355
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[cough]",
+        "SYMPTOMS": "cough",
         "SOURCE": "Twitter",
-        "DATE": "1461429020000"
+        "DATE": "1461272651000"
       }
     },
     {
@@ -102,15 +99,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          43.1938516,
-          -71.5723953
+          -3.740306,
+          52.044262
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[asthma]",
+        "SYMPTOMS": "sneezing",
         "SOURCE": "Twitter",
-        "DATE": "1461418844000"
+        "DATE": "1461272555000"
       }
     },
     {
@@ -118,15 +115,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          4.9536104,
-          -1.7344155
+          -119.4179324,
+          36.778261
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[cough]",
+        "SYMPTOMS": "asthma",
         "SOURCE": "Twitter",
-        "DATE": "1461418322000"
+        "DATE": "1461270945000"
       }
     },
     {
@@ -134,15 +131,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          38.9071923,
-          -77.0368707
+          -84.6665637,
+          40.6258205
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[cough]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461417516000"
+        "DATE": "1461270042000"
       }
     },
     {
@@ -150,15 +147,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          44.837789,
-          -0.57918
+          -111.0937311,
+          34.0489281
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[cough]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461417450000"
+        "DATE": "1461268448000"
       }
     },
     {
@@ -166,15 +163,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.8617292,
-          139.6454822
+          -69.4454689,
+          45.253783
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[asthma]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461416989000"
+        "DATE": "1461266563000"
       }
     },
     {
@@ -182,15 +179,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          40.7127837,
-          -74.0059413
+          -71.209015,
+          42.470725
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[asthma]",
+        "SYMPTOMS": "asthma",
         "SOURCE": "Twitter",
-        "DATE": "1461415960000"
+        "DATE": "1461265038000"
       }
     },
     {
@@ -198,15 +195,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          51.237276,
-          -0.205883
+          -96.76780389999999,
+          46.8737648
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[cough]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461414313000"
+        "DATE": "1461264675000"
       }
     },
     {
@@ -214,15 +211,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          56.130366,
-          -106.346771
+          -119.8724326,
+          50.87399920000001
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[headache]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461412729000"
+        "DATE": "1461264233000"
       }
     },
     {
@@ -230,15 +227,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          40.5173517,
-          -107.7415633
+          10.451526,
+          51.165691
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[headache]",
+        "SYMPTOMS": "asthma",
         "SOURCE": "Twitter",
-        "DATE": "1461405584000"
+        "DATE": "1461262234000"
       }
     },
     {
@@ -246,15 +243,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          51.7520209,
-          -1.2577263
+          -106.4508639,
+          52.9399159
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[chest pain]",
+        "SYMPTOMS": "asthma",
         "SOURCE": "Twitter",
-        "DATE": "1461400511000"
+        "DATE": "1461260797000"
       }
     },
     {
@@ -262,15 +259,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          28.3337275,
-          -81.4947427
+          -84.3879824,
+          33.7489954
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[asthma]",
+        "SYMPTOMS": "asthma",
         "SOURCE": "Twitter",
-        "DATE": "1461395695000"
+        "DATE": "1461259179000"
       }
     },
     {
@@ -278,15 +275,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          51.062883,
-          -0.325858
+          151.2069902,
+          -33.8674869
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[headache]",
+        "SYMPTOMS": "asthma",
         "SOURCE": "Twitter",
-        "DATE": "1461395677000"
+        "DATE": "1461258105000"
       }
     },
     {
@@ -294,15 +291,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          51.0486151,
-          -114.0708459
+          -122.7496693,
+          53.9170641
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[asthma]",
+        "SYMPTOMS": "asthma",
         "SOURCE": "Twitter",
-        "DATE": "1461389406000"
+        "DATE": "1461258056000"
       }
     },
     {
@@ -310,15 +307,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.8617292,
-          139.6454822
+          -1.470085,
+          53.38112899999999
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[asthma]",
+        "SYMPTOMS": "cough",
         "SOURCE": "Twitter",
-        "DATE": "1461388169000"
+        "DATE": "1461257073000"
       }
     },
     {
@@ -326,15 +323,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          23.022505,
-          72.5713621
+          -78.278064,
+          35.9477859
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[cough]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461385907000"
+        "DATE": "1461253866000"
       }
     },
     {
@@ -342,15 +339,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          29.7604267,
-          -95.3698028
+          136.7017856,
+          36.7211287
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[headache]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461385102000"
+        "DATE": "1461252678000"
       }
     },
     {
@@ -358,15 +355,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          36.1699412,
-          -115.1398296
+          39.1659324,
+          21.5966075
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[cough]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461372170000"
+        "DATE": "1461251401000"
       }
     },
     {
@@ -374,15 +371,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          23.634501,
-          -102.552784
+          -0.1277583,
+          51.5073509
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[headache]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461371699000"
+        "DATE": "1461247947000"
       }
     },
     {
@@ -390,15 +387,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          38.0704276,
-          -86.67368069999999
+          -9.1393366,
+          38.7222524
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[cough]",
+        "SYMPTOMS": "cough",
         "SOURCE": "Twitter",
-        "DATE": "1461365734000"
+        "DATE": "1461238615000"
       }
     },
     {
@@ -406,15 +403,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          41.8781136,
-          -87.6297982
+          139.6722005,
+          35.2813412
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[asthma]",
+        "SYMPTOMS": "sore throat",
         "SOURCE": "Twitter",
-        "DATE": "1461361790000"
+        "DATE": "1461237439000"
       }
     },
     {
@@ -422,15 +419,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          44.9428975,
-          -123.0350963
+          5.099073,
+          46.631982
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[asthma]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461361081000"
+        "DATE": "1461230419000"
       }
     },
     {
@@ -438,15 +435,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          54.5403076,
-          -1.2936359
+          -78.42190049999999,
+          38.1586566
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[asthma]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461360508000"
+        "DATE": "1461228116000"
       }
     },
     {
@@ -454,15 +451,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          51.528737,
-          0.055472
+          -0.1869644,
+          5.6037168
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[cough]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461359409000"
+        "DATE": "1461226154000"
       }
     },
     {
@@ -470,15 +467,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          50.6147222,
-          8.3702778
+          -0.1869644,
+          5.6037168
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[headache]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461352641000"
+        "DATE": "1461226151000"
       }
     },
     {
@@ -486,15 +483,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          39.3711425,
-          -99.38055
+          -0.1869644,
+          5.6037168
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[headache]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461351720000"
+        "DATE": "1461226149000"
       }
     },
     {
@@ -502,15 +499,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          49.8997541,
-          -97.1374937
+          -0.1869644,
+          5.6037168
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[asthma]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461349518000"
+        "DATE": "1461226148000"
       }
     },
     {
@@ -518,15 +515,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          41.11774399999999,
-          -73.4081575
+          0.0186555,
+          5.7089238
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[asthma]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461348247000"
+        "DATE": "1461226145000"
       }
     },
     {
@@ -534,15 +531,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          43.0316834,
-          -87.943843
+          -0.1869644,
+          5.6037168
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[headache]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461343143000"
+        "DATE": "1461226145000"
       }
     },
     {
@@ -550,15 +547,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          40.7434829,
-          -73.83656789999999
+          -0.1869644,
+          5.6037168
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[headache]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461342340000"
+        "DATE": "1461226144000"
       }
     },
     {
@@ -566,15 +563,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          33.7174708,
-          -117.8311428
+          0.0186555,
+          5.7089238
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[cough]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461338862000"
+        "DATE": "1461226143000"
       }
     },
     {
@@ -582,15 +579,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          51.253775,
-          -85.3232139
+          -0.1869644,
+          5.6037168
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[asthma]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461337685000"
+        "DATE": "1461226141000"
       }
     },
     {
@@ -598,15 +595,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          43.0481221,
-          -76.14742439999999
+          -0.1869644,
+          5.6037168
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[headache]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461337014000"
+        "DATE": "1461225306000"
       }
     },
     {
@@ -614,15 +611,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          43.9368383,
-          -78.9288242
+          -0.1869644,
+          5.6037168
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[asthma]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461336681000"
+        "DATE": "1461225300000"
       }
     },
     {
@@ -630,15 +627,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          53.9170641,
-          -122.7496693
+          -3.7037902,
+          40.4167754
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[asthma]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461336467000"
+        "DATE": "1461225078000"
       }
     },
     {
@@ -646,15 +643,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          43.0481221,
-          -76.14742439999999
+          -0.1869644,
+          5.6037168
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[headache]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461336200000"
+        "DATE": "1461224196000"
       }
     },
     {
@@ -662,15 +659,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          39.9525839,
-          -75.1652215
+          -1.023194,
+          7.946527
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[chest pain]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461335731000"
+        "DATE": "1461223739000"
       }
     },
     {
@@ -678,15 +675,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          39.9525839,
-          -75.1652215
+          -1.023194,
+          7.946527
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[chest pain]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461335731000"
+        "DATE": "1461223736000"
       }
     },
     {
@@ -694,15 +691,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          47.7510741,
-          -120.7401386
+          -1.023194,
+          7.946527
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[cough]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461333776000"
+        "DATE": "1461223735000"
       }
     },
     {
@@ -710,15 +707,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          37.09024,
-          -95.712891
+          -1.023194,
+          7.946527
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[asthma]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461333280000"
+        "DATE": "1461223734000"
       }
     },
     {
@@ -726,15 +723,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          42.0739678,
-          24.9637991
+          -0.1869644,
+          5.6037168
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[headache]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461327328000"
+        "DATE": "1461223732000"
       }
     },
     {
@@ -742,15 +739,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          26.4841408,
-          80.34729519999999
+          -0.1869644,
+          5.6037168
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[cough]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461327014000"
+        "DATE": "1461223150000"
       }
     },
     {
@@ -758,15 +755,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          51.4225058,
-          -2.2383863
+          36.8219462,
+          -1.2920659
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[asthma]",
+        "SYMPTOMS": "asthma",
         "SOURCE": "Twitter",
-        "DATE": "1461325898000"
+        "DATE": "1461222288000"
       }
     },
     {
@@ -774,15 +771,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          51.5073509,
-          -0.1277583
+          -99.9018131,
+          31.9685988
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[asthma]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461325773000"
+        "DATE": "1461216430000"
       }
     },
     {
@@ -790,15 +787,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.5243793,
-          3.3792057
+          139.6454822,
+          35.8617292
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[asthma]",
+        "SYMPTOMS": "asthma",
         "SOURCE": "Twitter",
-        "DATE": "1461324481000"
+        "DATE": "1461215952000"
       }
     },
     {
@@ -806,15 +803,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -27.4710107,
-          153.0234489
+          -2.9915726,
+          53.4083714
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[chest pain]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461321797000"
+        "DATE": "1461215015000"
       }
     },
     {
@@ -822,15 +819,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          41.408969,
-          -75.66241219999999
+          -117.1566929,
+          33.5576309
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[cough]",
+        "SYMPTOMS": "asthma",
         "SOURCE": "Twitter",
-        "DATE": "1461318738000"
+        "DATE": "1461212960000"
       }
     },
     {
@@ -838,15 +835,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          29.5428087,
-          -98.47422429999999
+          -122.3320708,
+          47.6062095
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[headache]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461316603000"
+        "DATE": "1461212921000"
       }
     },
     {
@@ -854,15 +851,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          40.42115889999999,
-          -86.9187728
+          -117.9242966,
+          33.8703596
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[headache]",
+        "SYMPTOMS": "asthma",
         "SOURCE": "Twitter",
-        "DATE": "1461310968000"
+        "DATE": "1461210761000"
       }
     },
     {
@@ -870,15 +867,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          41.247507,
-          -76.0474491
+          -83.03636329999999,
+          42.3149367
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[headache]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461310386000"
+        "DATE": "1461209468000"
       }
     },
     {
@@ -886,15 +883,159 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          20.593684,
-          78.96288
+          17.0957876,
+          45.5607192
         ]
       },
       "properties": {
         "SEVERITY": "5",
-        "SYMPTOMS": "[cough]",
+        "SYMPTOMS": "headache",
         "SOURCE": "Twitter",
-        "DATE": "1461310342000"
+        "DATE": "1461208507000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.79698789999999,
+          32.7766642
+        ]
+      },
+      "properties": {
+        "SEVERITY": "5",
+        "SYMPTOMS": "headache",
+        "SOURCE": "Twitter",
+        "DATE": "1461205378000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.1945247,
+          41.2033216
+        ]
+      },
+      "properties": {
+        "SEVERITY": "5",
+        "SYMPTOMS": "headache",
+        "SOURCE": "Twitter",
+        "DATE": "1461202527000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.5999594,
+          -34.92862119999999
+        ]
+      },
+      "properties": {
+        "SEVERITY": "5",
+        "SYMPTOMS": "asthma",
+        "SOURCE": "Twitter",
+        "DATE": "1461199804000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7633315,
+          -36.8484597
+        ]
+      },
+      "properties": {
+        "SEVERITY": "5",
+        "SYMPTOMS": "asthma",
+        "SOURCE": "Twitter",
+        "DATE": "1461197076000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.931608,
+          36.96332900000001
+        ]
+      },
+      "properties": {
+        "SEVERITY": "5",
+        "SYMPTOMS": "asthma",
+        "SOURCE": "Twitter",
+        "DATE": "1461195241000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1277583,
+          51.5073509
+        ]
+      },
+      "properties": {
+        "SEVERITY": "5",
+        "SYMPTOMS": "headache",
+        "SOURCE": "Twitter",
+        "DATE": "1461189605000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.765835,
+          -32.522779
+        ]
+      },
+      "properties": {
+        "SEVERITY": "5",
+        "SYMPTOMS": "headache",
+        "SOURCE": "Twitter",
+        "DATE": "1461188987000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.4105409,
+          39.41426879999999
+        ]
+      },
+      "properties": {
+        "SEVERITY": "5",
+        "SYMPTOMS": "asthma",
+        "SOURCE": "Twitter",
+        "DATE": "1461187287000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.7068294,
+          19.5665192
+        ]
+      },
+      "properties": {
+        "SEVERITY": "5",
+        "SYMPTOMS": "headache",
+        "SOURCE": "Twitter",
+        "DATE": "1461182902000"
       }
     }
   ]
