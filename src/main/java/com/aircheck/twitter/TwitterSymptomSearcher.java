@@ -32,12 +32,16 @@ public class TwitterSymptomSearcher {
 	private static List<String> queryWordsToIgnore = Arrays.asList("test");
 
 	
-	public static List<SicknessDetail> searchSicknessDetails()
+	public static List<SicknessDetail> searchSicknessDetails(Date start, Date end)
 	{
 		MultiValueMap<String, String> parameters = new LinkedMultiValueMap<String, String>();
 		parameters.set("q",prepareQuery());
 		parameters.set("include_entities","false");
 		parameters.set("count","100");
+		if (end != null) {
+			DateFormat format = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);
+			parameters.set("until", format.format(end));
+		}
 		URI url =  URIBuilder.fromUri("https://api.twitter.com/1.1/search/tweets.json").queryParams(parameters).build();
 		System.err.println(url.toString());
 		List<SicknessDetail> details = new ArrayList<>();
@@ -48,6 +52,16 @@ public class TwitterSymptomSearcher {
 		for (Status tweet : results.getStatuses()) {
 			SicknessDetail detail = new SicknessDetail();
 			detail.setProperties(new Properties());
+			try {
+		    	Date date = df.parse(tweet.getCreatedAt());
+		    	//if (tweet.getUser() != null)
+		    	//	date.setTime(date.getTime() + (tweet.getUser().getUtcOffset() * 1000));
+		    	if (start != null && date.getTime() < start.getTime())
+		    		continue;
+				detail.getProperties().put(SicknessDetail.PROPERTY_DATE, "" + date.getTime());
+			} catch (ParseException e) {
+				e.printStackTrace();
+			} 
 			if (tweet.getUser().getLocation() != null) {
 				Geometry geometry = getCoordinates(tweet.getUser().getLocation());
 				if (geometry == null)
@@ -56,23 +70,18 @@ public class TwitterSymptomSearcher {
 			}
 			detail.getProperties().put(SicknessDetail.PROPERTY_SOURCE, InfoSource.Twitter.toString());
 			detail.getProperties().put(SicknessDetail.PROPERTY_SEVERITY, "5");
-		    try {
-		    	Date date = df.parse(tweet.getCreatedAt());
-		    	//if (tweet.getUser() != null)
-		    	//	date.setTime(date.getTime() + (tweet.getUser().getUtcOffset() * 1000));
-				detail.getProperties().put(SicknessDetail.PROPERTY_DATE, "" + date.getTime());
-			} catch (ParseException e) {
-				e.printStackTrace();
-			} 
 			details.add(detail);
 			String tweetLower = tweet.getText().toLowerCase();
-			ArrayList<String> foundSymptoms = new ArrayList<String>();
+			StringBuilder stringBuilder = new StringBuilder();
+			boolean first = true;
 			for (String s : querySymptoms) {
 				if (tweetLower.contains(s)) {
-					foundSymptoms.add(s);
+					if (!first)
+						stringBuilder.append(", ");
+					stringBuilder.append(s);
 				}					
 			}
-			detail.getProperties().put(SicknessDetail.PROPERTY_SYMPTOMS, foundSymptoms.toString());
+			detail.getProperties().put(SicknessDetail.PROPERTY_SYMPTOMS, stringBuilder.toString());
 			System.err.println(tweet.getText());
 		}
 		return details;
@@ -92,7 +101,7 @@ public class TwitterSymptomSearcher {
 				coordinates = new Geometry();
 				double lat = result.getGeometry().getLocation().getLat();
 				double lon = result.getGeometry().getLocation().getLng();
-				coordinates.setCoordinates(new double[] {lat, lon});
+				coordinates.setCoordinates(new double[] {lon, lat});
 			}
 		}
 		return coordinates;
