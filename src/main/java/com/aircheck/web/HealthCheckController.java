@@ -1,6 +1,9 @@
 package com.aircheck.web;
 
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -18,11 +21,30 @@ import com.aircheck.twitter.TwitterSymptomSearcher;
 @RestController
 public class HealthCheckController {
 
-	private List<SicknessDetail> localDetails = new ArrayList<SicknessDetail>();
+	private static List<SicknessDetail> localDetails = new ArrayList<SicknessDetail>();
 	
 	@RequestMapping("/getHealthInfo")
-	public List<SicknessDetail> getHealthInfo() {
-		List<SicknessDetail> details = TwitterSymptomSearcher.searchSicknessDetails();
+	public List<SicknessDetail> getHealthInfo(@RequestParam(value="start", required=false) String start,
+			@RequestParam(value="end", required=false) String end) {
+		DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
+		Date startDate = null;
+		Date endDate = null;
+		try {
+			if (start != null && !start.isEmpty())
+				startDate = df.parse(start);
+			if (end != null && !end.isEmpty())
+				endDate = df.parse(end);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		List<SicknessDetail> details = TwitterSymptomSearcher.searchSicknessDetails(startDate, endDate);
+		for (SicknessDetail detail : localDetails) {
+			Long date = Long.parseLong(detail.getProperties().getProperty(SicknessDetail.PROPERTY_DATE));
+			if (date < startDate.getTime() || date > endDate.getTime())
+				continue;
+			details.add(detail);
+		}
 		details.addAll(localDetails);
 		return details;
 	}
