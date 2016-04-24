@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>AirCheck</title>
+    <title>WEIGH</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="leaflet.css">
-    <link rel="stylesheet" href="css/MarkerCluster.Default.css">
+    <!--<link rel="stylesheet" href="css/ol.css" type="text/css">-->
     <style>
         .navbar {
             background: #fff;
@@ -29,20 +29,6 @@
 
         .modal-body {
             overflow: auto;
-        }
-        .leaflet-cluster-anim .leaflet-marker-icon, .leaflet-cluster-anim .leaflet-marker-shadow {
-            -webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s ease-in;
-            -moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s ease-in;
-            -o-transition: -o-transform 0.3s ease-out, opacity 0.3s ease-in;
-            transition: transform 0.3s ease-out, opacity 0.3s ease-in;
-        }
-
-        .leaflet-cluster-spider-leg {
-            /* stroke-dashoffset (duration and function) should match with leaflet-marker-icon transform in order to track it exactly */
-            -webkit-transition: -webkit-stroke-dashoffset 0.3s ease-out, -webkit-stroke-opacity 0.3s ease-in;
-            -moz-transition: -moz-stroke-dashoffset 0.3s ease-out, -moz-stroke-opacity 0.3s ease-in;
-            -o-transition: -o-stroke-dashoffset 0.3s ease-out, -o-stroke-opacity 0.3s ease-in;
-            transition: stroke-dashoffset 0.3s ease-out, stroke-opacity 0.3s ease-in;
         }
     </style>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -65,7 +51,7 @@
             <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-            <p class="navbar-text"><b>AirCheck</b></p>
+            <p class="navbar-text"><b>WEIGH</b></p>
             <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#dataModal">Add
                 data
             </button>
@@ -138,7 +124,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
             </div>
         </div>
         <!-- /.modal-content -->
@@ -161,7 +147,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Update map</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Update map</button>
             </div>
         </div>
         <!-- /.modal-content -->
@@ -178,13 +164,9 @@
                 <h4 class="modal-title">Symptoms</h4>
             </div>
             <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-lg-4">
+                <div id="sympton-list" class="row">
 
-                        <label class="list-group-item"><input type="checkbox" name="symptom" value="sore throat"> sore
-                            throat</label>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-lg-4">
+                    <!-- <div class="col-md-6 col-sm-6 col-lg-4">
                         <label class="list-group-item"><input type="checkbox" name="symptom" value="headache">
                             headache</label>
                     </div>
@@ -223,12 +205,12 @@
                     <div class="col-md-6 col-sm-6 col-lg-4">
                         <label class="list-group-item"><input type="checkbox" name="symptom" value="itchy eyes"> itchy
                             eyes</label>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Update map</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnUpdateMap">Update map</button>
             </div>
         </div>
         <!-- /.modal-content -->
@@ -244,8 +226,10 @@
 <script src="leaflet.js"></script>
 <script src="js/GIBSLayer.js"></script>
 <script src="js/GIBSMetadata.js"></script>
-<script src="js/leaflet.markercluster.js"></script>
 <script src="js/moment.js"></script>
+<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
+<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' />
 <script src="js/main.js"></script>
 <script>
 
