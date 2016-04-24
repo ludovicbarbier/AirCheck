@@ -4,15 +4,15 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                37.8271784,
-                -122.2913078
+                -33.8674869,
+                151.2069902
             ]
         },
         "properties": {
-            "symptom": "sore throat, cough, itchy eyes",
-            "source": "Twitter",
-            "severity": 5,
-            "date": 1461201383000
+            "SEVERITY": "5",
+            "SYMPTOMS": "[cough]",
+            "SOURCE": "Twitter",
+            "DATE": "1461450279000"
         }
     },
     {
@@ -20,15 +20,15 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                0.0,
-                0.0
+                40.8478088,
+                -122.6381817
             ]
         },
         "properties": {
-            "symptom": "sore throat, headache, runny nose",
-            "source": "Twitter",
-            "severity": 5,
-            "date": 1461078095000
+            "SEVERITY": "5",
+            "SYMPTOMS": "[headache]",
+            "SOURCE": "Twitter",
+            "DATE": "1461449786000"
         }
     },
     {
@@ -36,15 +36,15 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                1.6076812,
-                110.3785438
+                56.130366,
+                -106.346771
             ]
         },
         "properties": {
-            "symptom": "",
-            "source": "Twitter",
-            "severity": 5,
-            "date": 1460945641000
+            "SEVERITY": "5",
+            "SYMPTOMS": "[asthma]",
+            "SOURCE": "Twitter",
+            "DATE": "1461447311000"
         }
     },
     {
@@ -52,15 +52,15 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                2.9181251,
-                101.4763288
+                -1.9705786,
+                30.1044288
             ]
         },
         "properties": {
-            "symptom": "sore throat",
-            "source": "Twitter",
-            "severity": 5,
-            "date": 1460893821000
+            "SEVERITY": "5",
+            "SYMPTOMS": "[cough]",
+            "SOURCE": "Twitter",
+            "DATE": "1461442651000"
         }
     },
     {
@@ -68,15 +68,831 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -26.2041028,
-                28.0473051
+                34.5928144,
+                -77.34239819999999
             ]
         },
         "properties": {
-            "symptom": "sore throat, headache, runny nose",
-            "source": "Twitter",
-            "severity": 5,
-            "date": 1460736848000
+            "SEVERITY": "5",
+            "SYMPTOMS": "[chest pain]",
+            "SOURCE": "Twitter",
+            "DATE": "1461432289000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                53.4083714,
+                -2.9915726
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[cough]",
+            "SOURCE": "Twitter",
+            "DATE": "1461429020000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                43.1938516,
+                -71.5723953
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[asthma]",
+            "SOURCE": "Twitter",
+            "DATE": "1461418844000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.9536104,
+                -1.7344155
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[cough]",
+            "SOURCE": "Twitter",
+            "DATE": "1461418322000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                38.9071923,
+                -77.0368707
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[cough]",
+            "SOURCE": "Twitter",
+            "DATE": "1461417516000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                44.837789,
+                -0.57918
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[cough]",
+            "SOURCE": "Twitter",
+            "DATE": "1461417450000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                35.8617292,
+                139.6454822
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[asthma]",
+            "SOURCE": "Twitter",
+            "DATE": "1461416989000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                40.7127837,
+                -74.0059413
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[asthma]",
+            "SOURCE": "Twitter",
+            "DATE": "1461415960000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                51.237276,
+                -0.205883
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[cough]",
+            "SOURCE": "Twitter",
+            "DATE": "1461414313000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                56.130366,
+                -106.346771
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[headache]",
+            "SOURCE": "Twitter",
+            "DATE": "1461412729000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                40.5173517,
+                -107.7415633
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[headache]",
+            "SOURCE": "Twitter",
+            "DATE": "1461405584000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                51.7520209,
+                -1.2577263
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[chest pain]",
+            "SOURCE": "Twitter",
+            "DATE": "1461400511000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                28.3337275,
+                -81.4947427
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[asthma]",
+            "SOURCE": "Twitter",
+            "DATE": "1461395695000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                51.062883,
+                -0.325858
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[headache]",
+            "SOURCE": "Twitter",
+            "DATE": "1461395677000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                51.0486151,
+                -114.0708459
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[asthma]",
+            "SOURCE": "Twitter",
+            "DATE": "1461389406000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                35.8617292,
+                139.6454822
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[asthma]",
+            "SOURCE": "Twitter",
+            "DATE": "1461388169000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                23.022505,
+                72.5713621
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[cough]",
+            "SOURCE": "Twitter",
+            "DATE": "1461385907000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.7604267,
+                -95.3698028
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[headache]",
+            "SOURCE": "Twitter",
+            "DATE": "1461385102000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                36.1699412,
+                -115.1398296
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[cough]",
+            "SOURCE": "Twitter",
+            "DATE": "1461372170000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                23.634501,
+                -102.552784
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[headache]",
+            "SOURCE": "Twitter",
+            "DATE": "1461371699000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                38.0704276,
+                -86.67368069999999
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[cough]",
+            "SOURCE": "Twitter",
+            "DATE": "1461365734000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                41.8781136,
+                -87.6297982
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[asthma]",
+            "SOURCE": "Twitter",
+            "DATE": "1461361790000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                44.9428975,
+                -123.0350963
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[asthma]",
+            "SOURCE": "Twitter",
+            "DATE": "1461361081000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                54.5403076,
+                -1.2936359
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[asthma]",
+            "SOURCE": "Twitter",
+            "DATE": "1461360508000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                51.528737,
+                0.055472
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[cough]",
+            "SOURCE": "Twitter",
+            "DATE": "1461359409000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                50.6147222,
+                8.3702778
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[headache]",
+            "SOURCE": "Twitter",
+            "DATE": "1461352641000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.3711425,
+                -99.38055
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[headache]",
+            "SOURCE": "Twitter",
+            "DATE": "1461351720000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                49.8997541,
+                -97.1374937
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[asthma]",
+            "SOURCE": "Twitter",
+            "DATE": "1461349518000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                41.11774399999999,
+                -73.4081575
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[asthma]",
+            "SOURCE": "Twitter",
+            "DATE": "1461348247000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                43.0316834,
+                -87.943843
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[headache]",
+            "SOURCE": "Twitter",
+            "DATE": "1461343143000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                40.7434829,
+                -73.83656789999999
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[headache]",
+            "SOURCE": "Twitter",
+            "DATE": "1461342340000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                33.7174708,
+                -117.8311428
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[cough]",
+            "SOURCE": "Twitter",
+            "DATE": "1461338862000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                51.253775,
+                -85.3232139
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[asthma]",
+            "SOURCE": "Twitter",
+            "DATE": "1461337685000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                43.0481221,
+                -76.14742439999999
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[headache]",
+            "SOURCE": "Twitter",
+            "DATE": "1461337014000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                43.9368383,
+                -78.9288242
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[asthma]",
+            "SOURCE": "Twitter",
+            "DATE": "1461336681000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                53.9170641,
+                -122.7496693
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[asthma]",
+            "SOURCE": "Twitter",
+            "DATE": "1461336467000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                43.0481221,
+                -76.14742439999999
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[headache]",
+            "SOURCE": "Twitter",
+            "DATE": "1461336200000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.9525839,
+                -75.1652215
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[chest pain]",
+            "SOURCE": "Twitter",
+            "DATE": "1461335731000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.9525839,
+                -75.1652215
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[chest pain]",
+            "SOURCE": "Twitter",
+            "DATE": "1461335731000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                47.7510741,
+                -120.7401386
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[cough]",
+            "SOURCE": "Twitter",
+            "DATE": "1461333776000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                37.09024,
+                -95.712891
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[asthma]",
+            "SOURCE": "Twitter",
+            "DATE": "1461333280000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                42.0739678,
+                24.9637991
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[headache]",
+            "SOURCE": "Twitter",
+            "DATE": "1461327328000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                26.4841408,
+                80.34729519999999
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[cough]",
+            "SOURCE": "Twitter",
+            "DATE": "1461327014000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                51.4225058,
+                -2.2383863
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[asthma]",
+            "SOURCE": "Twitter",
+            "DATE": "1461325898000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                51.5073509,
+                -0.1277583
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[asthma]",
+            "SOURCE": "Twitter",
+            "DATE": "1461325773000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                6.5243793,
+                3.3792057
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[asthma]",
+            "SOURCE": "Twitter",
+            "DATE": "1461324481000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -27.4710107,
+                153.0234489
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[chest pain]",
+            "SOURCE": "Twitter",
+            "DATE": "1461321797000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                41.408969,
+                -75.66241219999999
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[cough]",
+            "SOURCE": "Twitter",
+            "DATE": "1461318738000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.5428087,
+                -98.47422429999999
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[headache]",
+            "SOURCE": "Twitter",
+            "DATE": "1461316603000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                40.42115889999999,
+                -86.9187728
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[headache]",
+            "SOURCE": "Twitter",
+            "DATE": "1461310968000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                41.247507,
+                -76.0474491
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[headache]",
+            "SOURCE": "Twitter",
+            "DATE": "1461310386000"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                20.593684,
+                78.96288
+            ]
+        },
+        "properties": {
+            "SEVERITY": "5",
+            "SYMPTOMS": "[cough]",
+            "SOURCE": "Twitter",
+            "DATE": "1461310342000"
         }
     }
 ]
